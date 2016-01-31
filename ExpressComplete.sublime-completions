@@ -3,10 +3,11 @@
 
    "completions":
    [
-      { "trigger": "rget\trouter.get", "contents": "router.get('/$1',function(req,res) { \n $2 \n });" },
-      { "trigger": "rpost\trouter.post", "contents": "router.post('/$1',function(req,res) { \n $2 \n });" },
-      { "trigger": "rput\trouter.put", "contents": "router.put('/$1',function(req,res) { \n $2 \n });" },
-      { "trigger": "rdel\trouter.delete", "contents": "router.delete('/$1',function(req,res) { \n $2 \n });" },
+      { "trigger": "rget\trouter.get", "contents": "router.get('/$1',function(req,res) {\n \t$2 \n});" },
+      { "trigger": "rpost\trouter.post", "contents": "router.post('/$1',function(req,res) {\n \t$2 \n});" },
+      { "trigger": "rput\trouter.put", "contents": "router.put('/$1',function(req,res) {\n \t$2 \n});" },
+      { "trigger": "rdel\trouter.delete", "contents": "router.delete('/$1',function(req,res) {\n \t$2 \n});" },
+      { "trigger": "rpatch\trouter.patch", "contents": "router.patch('/$1',function(req,res) {\n \t$2 \n});" },
       { "trigger": "rs\tres.send", "contents": "res.send($1);" },
       { "trigger": "rw\tres.write", "contents": "res.write($1);" },
       { "trigger": "re\tres.end", "contents": "res.end($1);" },
@@ -14,6 +15,9 @@
       { "trigger": "rqb\treq.body", "contents": "req.body" },
       { "trigger": "rqsess\treq.session", "contents": "req.session" },
       { "trigger": "rd\tres.redirect", "contents": "res.redirect($1);" },
-      { "trigger": "rr\tres.render", "contents": "res.render('$1');" }
+      { "trigger": "rr\tres.render", "contents": "res.render('$1');" },
+      { "trigger": "rl\treq.local", "contents": "req.locals = ('$1');" },
+      { "trigger": "as\tapp.set", "contents": "app.set('$1', '$2');" },
+      { "trigger": "au\tapp.use", "contents": "app.use('$1', '$2');" }
    ]
 }
